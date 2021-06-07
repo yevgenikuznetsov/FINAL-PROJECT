@@ -6,9 +6,9 @@ The system will support mechanisms and services for collecting information from 
 
 * Client side - Angular
 * Server side - Java - Spring
-** Using:
-*** Web crawler
-*** DFS
+  * Using:
+    * Web crawler
+    * DFS
 * DB - Firebase (NoSQL)
 
 ## Image:
