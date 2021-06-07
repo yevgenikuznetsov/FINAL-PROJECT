@@ -13,4 +13,8 @@ The system will support mechanisms and services for collecting information from 
 
 ## Image:
 
+![image](https://user-images.githubusercontent.com/49569713/121035154-47f2c580-c7b6-11eb-865d-d47b3dfe8a9d.png)
+![image](https://user-images.githubusercontent.com/49569713/121035210-53de8780-c7b6-11eb-8076-1a4f4f7c2ad9.png)
+
+
 
