@@ -1,0 +1,44 @@
+.card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  color: #272b30;
+  border-width: medium;
+  background: rgb(247, 246, 246);
+  box-shadow: 2px 2px 2px 2px #272b3079, 2px 2px 2px 2px #272b3065, 2px 2px 2px 2px #272b3057;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.stats-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.card-stats [class*=col-] .statistics:after {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 1px;
+  height: calc(100% - 40px);
+  content: "";
+  background: #ddd;
+}
+
+.card-stats .statistics {
+  position: relative;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.info-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.material-icons {
+  text-shadow: 1px 1px 2px #000000;
+}

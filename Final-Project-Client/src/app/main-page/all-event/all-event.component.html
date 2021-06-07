@@ -1,0 +1,31 @@
+<div class="alert-card">
+  <h1 class="card-category" style="font-weight: bold;">
+    <span class="material-icons" style="margin-top: 5px;"> sensors </span>      
+    Last Alert Time:</h1>
+  <div class="card-body" style="height: 100px; overflow-y: auto; margin: 10px;">
+      <div class="alert"> {{lastAlert}} </div>
+  </div>
+</div>
+
+<div class="card">
+    <h1 class="card-category">All Suspicious Information</h1>
+    <div class="card-body" style="height: 600px; overflow-y: auto; margin: 10px;">
+        <div class="table-full-width table-responsive">
+            <table class="table">
+              <tbody>
+                <tr style="width: 85%;" *ngFor="let event of allEvent">
+                    <td class="text-left">
+                        <p class="person-name">{{event.name}}</p>
+                        <p>{{event.date}}</p>
+                        <p class="person-text">{{event.information}}</p>
+                    </td>
+                    <td class="text-right" style="  font-family: 'IBM Plex Mono', monospace;
+                    font-family: 'Montserrat', sans-serif;">
+                        {{event.searchDate}}
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+</div>

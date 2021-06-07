@@ -1,0 +1,38 @@
+.container-fluid {
+  position: relative;
+  top: 50%;
+  Transform: translateY(-50%);
+}
+
+.navbar-brand {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.material-icons {
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 7px;
+  font-size: 25px;
+}
+
+.form-control {
+  background-color: rgba(112, 109, 109, 0.322);
+  border-radius: 15px;
+  color: white;
+  width: 80%;
+  height: 40px;
+  border-color: white;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(112, 109, 109, 0.322);
+  color: white;
+  text-shadow: 1px 1px 2px #ffffff;
+}

@@ -1,0 +1,24 @@
+<body *ngIf="!isLogIn; else other_content">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+     
+          <div class="fadeIn first">
+            <img src= 'https://image.freepik.com/free-vector/spiderweb-with-spider-white-background-illustration_149267-797.jpg' id="icon" alt="Program Icon" />
+          </div>
+      
+          <form (ngSubmit)="onSubmit()" #userInput="ngForm">
+            <input type="email" id="login" class="fadeIn second" ngModel name="email" placeholder="login" required>
+            <input type="password" id="password" class="fadeIn third" ngModel name="password" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+          <div class="error" *ngIf="error">Enter the username and password</div>
+          <div class="error" *ngIf="notExists">One or more of the input data is incorrect</div>
+        </div>
+    </div>
+</body>
+
+<ng-template #other_content>
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+</ng-template>
+

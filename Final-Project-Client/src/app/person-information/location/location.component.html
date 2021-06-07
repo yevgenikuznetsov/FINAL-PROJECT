@@ -1,0 +1,15 @@
+<div>
+  <h4 id="reportTitle">Map</h4>
+  <div class="card">
+    <div class="card-body" style="height: 650px; overflow-y: auto; margin: 10px;">
+      <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+        <agm-marker  *ngFor="let m of markers"   [latitude]="m.lat" [longitude]="m.lng" ></agm-marker>
+      </agm-map>
+    </div>
+  </div>
+</div>
+
+
+
+
+

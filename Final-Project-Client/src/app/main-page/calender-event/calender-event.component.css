@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Montserrat:wght@100;300;400&display=swap');
+
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.card-category {
+  margin-left: 10px;
+  margin-top: 13px;
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.person-name {
+  font-size: 19px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+  color: rgb(23, 34, 136);
+}
+
+.person-text {
+  font-size: 18px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.now-ui-icons.loader_refresh:before {
+  content: "\ea44";
+}

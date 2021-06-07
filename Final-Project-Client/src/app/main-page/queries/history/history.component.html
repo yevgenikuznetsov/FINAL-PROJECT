@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title"> Search History List</h5>
+    </div>
+    <div class="card-body" style="height: 300px;overflow-y: auto;" *ngIf="loading; else elseBlock">
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="text-primary">
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Url
+                    </th>
+                    <th style="text-align: center;">
+                        Suspicious information was found
+                    </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let eve of events">
+                        <td class="information-history">{{eve.date}}</td>
+                        <td class="information-history">{{eve.url}}</td>
+                        <td class="text-right information-history">
+                            <p *ngIf = "eve.status; then thenBlock else elseBlock"></p>
+                            <ng-template #thenBlock><p style="color:rgb(187, 84, 70); font-weight: bold; text-align: center;">Yes</p></ng-template>
+                            <ng-template #elseBlock><p style="text-align: center;">No</p></ng-template>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <ng-template #elseBlock>Loading....</ng-template>
+</div>

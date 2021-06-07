@@ -1,0 +1,26 @@
+<div class="card">
+    <h1 class="card-category">Event List</h1>
+    <div class="card-body" style="height: 600px;overflow-y: auto; margin: 10px;">
+        <div class="table-full-width table-responsive">
+            <table class="table">
+              <tbody>
+                <tr style="width: 85%;" *ngFor="let event of eventList">
+                    <td class="text-left">
+                        <p class="person-name">{{event.name}}</p>
+                        <p class="person-text">{{event.information}}</p>
+                    </td>
+                    <td class="text-right" style="  font-family: 'IBM Plex Mono', monospace;
+                    font-family: 'Montserrat', sans-serif;">
+                        {{event.date}}
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+    <hr style="width: 90%;">
+    <div class="stats text-right">
+        <span class="material-icons" style="display:inline-block; vertical-align:sub; margin-right: 7px;">done</span>
+        <p style="margin-right: 10px; font-family: 'Montserrat', sans-serif; display:inline-block;"> Search: {{lastSearch.toLocaleString()}}</p></div>
+</div>
+

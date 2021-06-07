@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>All Marks:</h2>
+<mat-dialog-content>
+    <div>
+        <div style=" margin-top: 12px;overflow-y: auto; height: 75%;">
+            <div class="table-full-width table-responsive">
+                <table class="table">
+                  <tbody>
+                    <tr style="width: 85%;" *ngFor="let item of allMark | keyvalue">
+                        <td class="text-left">
+                            <p class="person-name">Mark Date: {{item.key}}</p>
+                            <p class="person-text">{{item.value}}</p>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+    </div>
+</mat-dialog-content>

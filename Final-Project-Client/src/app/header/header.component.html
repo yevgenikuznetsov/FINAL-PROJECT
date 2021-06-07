@@ -1,0 +1,29 @@
+<nav class=" navbar-default" style="background: #272b30; height: 80px;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a routerLink="/" class="navbar-brand">
+                <span class="material-icons">bug_report</span>
+                WEB SPIDER
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">           
+            <ul class="nav navbar-nav navbar-right" style="margin-top: 10px; width: 800px;display: inline;">
+                <form class="form-inline" style="display: inline;" (ngSubmit)="onSearchUser()">
+                 <input class="form-control" type="search" [(ngModel)]="this.searchName" name="search" placeholder="Search Person..." aria-label="Search">
+                    <button class="btn" style="margin-left: 10px;" type="submit">
+                        <span class="material-icons" style="  position: relative;
+                        right: 50%; margin-left: 2px;">search</span>
+                    </button>
+                 </form>
+                 <button class="btn" style="margin-left: 50px;display: inline;" (click)="exit()">
+                    <span class="material-icons" style="  position: relative;
+                    right: 50%; margin-left: 2px;">meeting_room</span>
+                </button>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<router-outlet></router-outlet>

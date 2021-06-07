@@ -1,0 +1,83 @@
+<body style="background:rgb(247, 246, 246)">
+    <div style="background-color: #272b30;">
+        <div style="display: block; background-color: #272b30;">
+            <canvas baseChart width="500" height="100"
+                        [datasets]="lineChartData"
+                        [labels]="lineChartLabels"
+                        [colors]="lineChartColors"
+                        [chartType]="lineChartType">
+            </canvas>
+      </div>
+    </div>
+
+    <div>
+        <div style="position: absolute; width: 65%; z-index: 9; margin-top: 50px;">
+            <div class="row row-centered">
+                <div class="col-md-7 " style="margin-left: 35px;float: none;margin: 0 auto; width: 100%;  left: 25%;position: absolute;">
+                    <div class="card card-stats">
+                        <div class="card-body">
+                            <div class="row" >
+                                <div class="col-md-3">
+                                    <div class="statistics">
+                                        <div class="info text-center">
+                                            <span class="material-icons" style="font-size: 40px; color: rgb(236, 51, 51);">warning</span>
+                                            <h3 class="info-title">{{moreInformation.numOfMessages}}</h3>
+                                            <h6 class="stats-title">Local messages found</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="statistics">
+                                        <div class="info text-center">
+                                            <span class="material-icons" style="font-size: 40px; color: rgb(97, 94, 94);">supervisor_account</span>
+                                            <h3 class="info-title">{{moreInformation.numOfSuspects}}</h3>
+                                            <h6 class="stats-title">Local suspicious people</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="statistics">
+                                        <div class="info text-center">
+                                            <span class="material-icons" style="font-size: 40px; color: rgba(41, 150, 99, 0.664);margin-right: 10px;">public</span>
+                                            <span class="material-icons" style="font-size: 40px; color: rgb(236, 51, 51);">warning</span>
+                                            <h3 class="info-title">{{moreInformation.numOfGlobalMessages}}</h3>
+                                            <h6 class="stats-title">Global messages found</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="statistics">
+                                        <div class="info text-center">
+                                            <span class="material-icons" style="font-size: 40px; color: rgba(41, 150, 99, 0.664); margin-right: 10px;">public</span>
+                                            <span class="material-icons" style="font-size: 40px; color: rgb(97, 94, 94);">supervisor_account</span>
+                                            <h3 class="info-title">{{moreInformation.numOfGlobalSuspects}}</h3>
+                                            <h6 class="stats-title">Global suspicious people</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="first" style="background-color: #272b30; height: 150px;position: relative; margin-bottom: 100px;"></div>
+    </div>
+
+    <div *ngIf="isAnalyst;else other_content" class="row" style="width: 100%; background-color: rgb(247, 246, 246);">
+        <div class="col-md-5" style="margin-left: 50px;">
+            <app-calender-event></app-calender-event>
+        </div>
+        <div class="col-md-6" style="margin-left: 30px;">
+            <app-queries></app-queries>
+        </div>
+    </div>
+
+    <ng-template #other_content>
+        <div class="row" style="width: 100%; background-color: rgb(247, 246, 246);">
+            <app-all-event></app-all-event>
+        </div>
+    </ng-template>
+
+</body>
+ 

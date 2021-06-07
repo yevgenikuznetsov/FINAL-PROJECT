@@ -1,0 +1,64 @@
+.card {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.87);
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.card-title {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.card-category {
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: rgba(88, 88, 88, 0.781);
+}
+
+.material-icons {
+  margin-right: 7px;
+  vertical-align: sub;
+  display: inline-block;
+  margin-left: 13px;
+}
+
+.btn-primary {
+  width: 15%;
+  margin-right: 40px;
+  margin-top: 23px;
+  border-color: black;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#getCheckTime {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(88, 88, 88, 0.781);
+}
+
+#button {
+  border-color: white;
+  background-color: white;
+  margin-left: 32px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: rgba(88, 88, 88, 0.781);
+}

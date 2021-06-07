@@ -1,0 +1,39 @@
+
+  <div>
+    <h4 id="reportTitle">Report:</h4>
+    <div class="card" style="margin-top: 40px;">
+      <div class="card-header">
+        <h5 class="card-category">{{personRes.name}}</h5>
+        <h5 id="title"> All Person Messages: </h5>
+      </div>
+      <div class="card-body" style="height: 500px; overflow-y: auto; margin: 10px;">
+        <div *ngIf="personExsist; else other_content" class="table-full-width table-responsive">
+          <table class="table">
+            <tbody>
+              <tr style="width: 85%;" *ngFor="let item of personRes.allPersonPost | keyvalue">
+                  <td class="text-left">
+                    <p id="date" >{{item.key}}</p>
+                    <p id="massage" style="margin-left: 10px;">{{item.value}}</p>
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ng-template #other_content>
+          <div>
+            <p style="font-size: 30px;margin-top: 5px;">The person you search does not exist</p>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h3 id="reportTitle" style="font-size: 18px;">Remarks:</h3>
+    <form class="form-inline" (ngSubmit)="onSubmit()" #remark="ngForm" style="margin-left: 15px;">
+      <div id="addAction" class="form-group form-inline">
+          <input style="width: 620px;height: 50px;" type="text" ngModel name="text" class="form-control" required>
+      </div>
+      <button style="margin-left: 25px;" id="submitButton" type="submit" class="btn btn-primary" >Add</button>
+    </form>
+  </div>
